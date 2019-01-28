@@ -17,7 +17,7 @@ index:
   ru: index.html
   en: index_en.html
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+url: "https://talerdev.github.io/taler/" # the base hostname & protocol for your site
 
 
 # Build settings

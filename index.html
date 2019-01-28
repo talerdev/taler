@@ -33,7 +33,7 @@ lang: ru
 								<a href="#" class="icon fa-angle-down">RU</a>
 								<ul>
 									{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-									{% for page in pages %}{% if page.lang != 'ru' %} <li><a href="{{ site.url }}{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li>{% endif %} {% endfor %}
+									{% for page in pages %}{% if page.lang != 'ru' %} <li><a href="https://talerdev.github.io/taler{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li>{% endif %} {% endfor %}
 								</ul>
 							</li>
 
