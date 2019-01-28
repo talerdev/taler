@@ -1,0 +1,268 @@
+---
+layout: default
+ref: index
+lang: en
+---
+		<div id="page-wrapper">
+
+<!-- Header -->
+	<header id="header" class="alt">
+		<h1><a href="/">TALER</a></h1>
+		<nav id="nav">
+			<ul>
+				<!--<li><a href="index.html"></a></li>-->
+				<li><a href="https://explorer.taler.site/" class="button">Taler Bloсk Explorer</a></li>
+				<li><a href="#" class="button">Roadmap</a></li>
+				<li><a href="#" class="button">Whitepaper</a></li>
+				<li><a href="http://talercoin.by/" class="button">Blog</a></li>
+				<li><a href="#exchanges" class="button">Exchanges</a></li>
+				<li>
+					<a href="#" class="icon fa-angle-down">EN</a>
+					<ul>
+						{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+						{% for page in pages %}{% if page.lang != 'en' %} <li><a href="http://127.0.0.1:4000{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li>{% endif %} {% endfor %}
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+			<!-- Banner -->
+
+			<div id="particles-js"></div>
+			<div id="ticker_value" class="to-animate">
+				<div class="currency">$1 <span class="country">USD</span></div>
+				<div class="currency">$1 <span class="country">USD</span></div>
+				<div class="currency">$1 <span class="country">USD</span></div>
+				<div class="currency">$1 <span class="country">USD</span></div>
+
+			</div>
+			<section id="banner">
+				<h2>Taler</h2>
+				<p>First Belarus cryptocurrency</p>
+				<ul class="actions special" style="z-index: 1000; position: absolute">
+					<li><a href="#main" class="button primary">More</a></li>
+					<li><a href="#wallets" class="button">Download wallet</a></li>
+				</ul>
+			</section>
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2></h2>
+								<p>Taler is anonymous cryptocurrency with opensource code. No devaluation, used in Bularus businesses.</p>
+						</header>
+						<!--<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>-->
+					</section>
+<section class="box special features">
+						<div class="features-row">
+							<section>
+								<span class="icon major fa-bolt accent2"></span>
+								<h3>Transactions speed</h3>
+								<p>Block approval only 1 minute, allows fast moving funds.</p>
+							</section>
+							<section>
+								<span class="iconn major fas fa-coins accent3"></span>
+								<h3>Pos staking</h3>
+								<p>Stacking allows users of earn coins and rise network.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="iconn major fas fa-handshake accent4"></span>
+								<h3>Atomic swaps</h3>
+								<p>Atomic swaps enable people to directly trade with one another wallet-to-wallet. No need to use exchange for changing cryptocurrency p2p.</p>
+							</section>
+							<section>
+								<span class="icon major fa-database accent5"></span>
+								<h3>Segregated Witness</h3>
+								<p>Segregated Witness (SegWit) updated protocol to change block size limit in Taler blockchain. Allows to add more transactions to one block.</p>
+							</section>
+						</div>
+            <div class="features-row">
+							<section>
+								<span class="icon major fa-lock accent4"></span>
+								<h3>Protection from double spending</h3>
+								<p>Double-spending is a potential flaw in a digital cash scheme in which the same single digital token can be spent more than once.</p>
+							</section>
+							<section>
+								<span class="iconn major fas fa-barcode accent5"></span>
+								<h3>Unique addresses</h3>
+								<p> Addresses Bech32 is faster and safer to use. Allows user to generate and send or receive to protected addresses. </p>
+							</section>
+						</div>
+					</section>
+					<section class="box special features">
+						<div class="features-row" id="specs">
+								<h3>Specification</h3>
+                <!--<section>-->
+                  <ul style="list-style: none">
+                    <li>Circulation supply - 23 333 333</li>
+                    <li>PoW/Pos algorithm - Lyra2z</li>
+                    <li>Mining Hardware - CPU, GPU</li>
+                    <li>Block reward- 50 монет</li>
+                    <li>Mining difficulty - adjusts every block</li>
+                    <li>Halving - enabled</li>
+                  </ul>
+						</div>
+					</section>
+					<section class="box special features">
+						<div class="features-row" id="wallets">
+							<p>
+								<!--<span class="icon major fa-bolt accent2"></span>-->
+								<h3>Wallets</h3>
+								<hr>
+								<p>
+
+									<a href="https://taler.site/files/TalerCoreWin32.zip" class="fab fa-windows"><br><span class="label">Windows 32 </span></a>
+									<a href="https://taler.site/files/TalerCoreWin64.zip" class="fab fa-windows"><br><span class="label">Windows 64</span></a>
+									<a href="https://taler.site/files/taler-qt" class="fab fa-linux"><br><span class="label">Linux</span></a>
+									<a href="https://taler.site/files/talercore.zip" class="fab fa-apple"><br><span class="label">Mac</span></a>
+									<a href="https://play.google.com/store/apps/details?id=xplatforms.taler.wallet" class="fab fa-android"><br><span class="label">Android</span></a>
+									<a href="https://wallet.taler.club/index.php?lang=en" class="fab fas fa-globe-africa "><br><span class="label">Online</span></a>
+							</p>
+						</div>
+
+					</section>
+					<section class="box special features">
+						<div class="features-row" id="exchanges" >
+							<p>
+								<!--<span class="icon major fa-bolt accent2"></span>-->
+								<h3>Exchanges</h3>
+								<hr>
+								<p>
+                  <br>
+									<a href="https://crex24.com/" class="fab logo"><img src="images/logos/crex24_logo.svg"><br><span class="label">Crex 24</span></a>
+									<a href="https://bitexlive.com/exchange/BTC-TLR" class="fab logo"><img class="light-gray" src="images/logos/logo_bitex.png"><br><span class="label">Bitex Live</span></a>
+									<a href="https://btc-trade.com.ua/" class="fab logo"><img class="light-gray" src="images/logos/logo_btc_trade.svg"><br><span class="label">Btc trade</span></a>
+									<a href="https://exion.io/" class="fab logo"><img class="light-gray" src="images/logos/logo_exion.png"><br><span class="label">Exion</span></a>
+									<a href="https://app.stex.com/ru/basic-trade/pair/BTC/TLR/1D" class="fab logo"><img class="light-gray" src="images/logos/Logo_stex.svg"><br><span class="label">Stex</span></a>
+							</p>
+						</div>
+
+					</section>
+
+          <section class="box special features">
+
+            <div class="features-row" id="social">
+								<!--<span class="icon major fa-bolt accent2"></span>-->
+							<h3>Community</h3>
+							<hr>
+							<ul class="icons big">
+                <li><a href="https://twitter.com/talerminsk" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/talercoinofficial/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/talerofficial/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://t.me/TalerOfficial" class="icon fa-telegram"><span class="label"></span></a></li>
+                <li><a href="https://github.com/taler-project" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://discordapp.com/invite/C5gTa98" class="fab fa-discord" style="color: gray; font-size: 60px; border-bottom: 0;"><span class="label"></span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJcLFsK07NovkxrUijht5uA" class="icon fa-youtube" ><span class="label">Youtube</span></a></li>
+              </ul>
+              <p></p>
+							<h3>Other stuff</h3>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Chats</th>
+										<th>Other</th>
+									</tr>
+								</thead>
+
+								<tr>
+									<td><a href="https://t.me/Taler_English">ENG chat</a></td>
+									<td><a href="https://TalerOnline.com">Blog</a></td>
+								</tr>
+								<tr>
+									<td><a href="https://t.me/TLRobmen">Taler exchange chat</a></td>
+									<td><a href="https://platilib.com">Paymets for cell phone</a></td>
+								</tr>
+								<tr>
+									<td><a href="https://t.me/MinerTalerChat">Mining chat</a></td>
+									<td><a href="https://twitter.com/LiveTaler">Twitter live</a>	</td>
+								</tr>
+								<tr>
+									<td><a href="https://t.me/TLRBusiness">Taler business partners chat</a></td>
+									<td><a href="https://ads.taleronline.com">Bulletin board</a></td>
+								</tr>
+								<tr>
+									<td><a href="https://t.me/talershop"> Taler Shop chat</a></td>
+									<td><a href="https://taleronline.com/taler-tlr-kran/">Free Taler giveaway</a></td>
+								</tr>
+								<tr>
+									<td><a href="https://t.me/vzlom_kartiny">Vzlom Kartiny</a> </td>
+									<td><a href="https://taler.games">Dice game</a></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><a href="https://knb.games.taleronline.com">Rock scissors paper game</a> </td>
+								</tr>
+								<thead>
+									<tr>
+										<th>Mining poosl</th>
+										<th>Explorer</th>
+									</tr>
+								</thead>
+								<tr>
+									<td><a href="https://pool.vie.today">pool.vie.today </a> </td>
+									<td><a href="https://explorer.taleronline.com">explorer.taleronline.com</a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://dragongoldpool.tk">dragongoldpool.tk</a> </td>
+									<td><a href="https://explorer.talercrypto.com">explorer.talercrypto.com</a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://lyra2z.com">lyra2z.com</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://talerpool.by">talerpool.by</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://tlr.idcray.com">tlr.idcray.com</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://fairmine.pro">fairmine.pro</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://zergpool.com">zergpool.com</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://tnthash.fun">tnthash.fun</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://mineblocks.ch">mineblocks.ch</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+								<tr>
+									<td><a href="https://smithpool.net">smithpool.net</a> </td>
+									<td><a href=""></a> </td>
+								</tr>
+							</table>
+						</div>
+
+					</section>
+
+
+
+				</section>
+
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/particles.min.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

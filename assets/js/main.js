@@ -197,21 +197,72 @@ particlesJS("particles-js", {
 
 /* ---- stats.js config ---- */
 
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
+//var count_particles, stats, update;
+//stats = new Stats;
+//stats.setMode(0);
+//stats.domElement.style.position = 'absolute';
+//stats.domElement.style.left = '0px';
+//stats.domElement.style.top = '0px';
+//document.body.appendChild(stats.domElement);
+//count_particles = document.querySelector('.js-count-particles');
+//update = function() {
+//  stats.begin();
+//  stats.end();
+//  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//  }
+//  requestAnimationFrame(update);
+//};
+//requestAnimationFrame(update);
+
+// A comma separated list of currencies to display.
+var ticker_currencies = ["btc","eth","usd","rub"];
+
+ticker = function(currencies) {
+  var symbols = {
+    usd: "$",
+    cny: "¥",
+    jpy: "¥",
+    eur: "€",
+    btc: "฿",
+    rub: "₽",
+    eth: "Ξ"
+  };
+
+  $.ajax({
+    type: "GET",
+    //url: "https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=" + currencies,
+    url: "https://api.coingecko.com/api/v3/coins/taler",
+    //contentType: "application/json; charset=utf-8",
+    timeout: 6000,
+    error: function (x, t, m) {
+      if ($('#ticker_value').html() === 'Loading...') {
+        $("#ticker_value").html("<div class='currency'>API data not found</div>");
+      }
+    },
+    success: function (currencyRates) {
+      var output = [];
+    //console.log(currencyRates);
+      $.each(ticker_currencies, function (num, currency)
+
+      {
+        var sym = symbols[currency],
+            price = currencyRates['market_data']['current_price'][currency];
+          console.log(currency, price);
+        if (sym === undefined) {
+          sym = "";
+        }
+        output.push("<div class='currency'>"  + sym + price.toFixed(8) + " <span class='country'>" + currency.toUpperCase() + "</span></div>");
+      });
+
+      $('#ticker_value').html(output);
+    }
+  }).done(function () {
+    setTimeout(function(){ ticker(ticker_currencies); }, 50000);
+  }).fail(function() {
+    setTimeout(function(){ ticker(ticker_currencies); }, 50000);
+  });
 };
-requestAnimationFrame(update);
+
+ticker(ticker_currencies);
 })(jQuery);
