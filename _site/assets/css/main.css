@@ -2419,14 +2419,14 @@
 				background: #e5cb95;
 				color: #ffffff;
 			}
-#wallets .fab {
-	font-size: 50px;
-	padding-left: 50px;
-	border-bottom: none;
-}
-#wallets .label {
-	font-size: 20px;
-}
+    #wallets .fab {
+        font-size: 50px;
+        padding-left: 50px;
+        border-bottom: none;
+    }
+    #wallets .label {
+        font-size: 20px;
+    }
 /* Image */
 
 	.image {
@@ -3396,6 +3396,13 @@
 					font-size: 3.5em;
 				}
 
+            #wallets a {
+                padding-left: 30px;
+                font-size: 40px;
+            }
+            #wallets .label {
+                font-size: 15px;
+            }
 	}
 
 /* Narrow */
@@ -3786,8 +3793,19 @@
 				margin-top: 1px;
 				letter-spacing: 1px;
 			}
+            #wallets .fab {
+                padding-left: 10px;
+                font-size: 20px;
+            }
+            #wallets .label {
+                font-size: 10px;
+            }
+            #banner .button {
+                min-width: 6em;
+            }
+	} {
+}
 
-	}
 
 /* Mobile (Portrait) */
 
