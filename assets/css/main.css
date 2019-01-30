@@ -2607,7 +2607,7 @@
 				-ms-flex-direction: column;
 				flex-direction: column;
 				margin-left: 0;
-				width: 100% !important;
+				/*width: 100% !important;*/
 			}
 
 				ul.actions:not(.fixed) li {
@@ -2621,11 +2621,11 @@
 					flex-shrink: 1;
 					padding: 1em 0 0 0;
 					text-align: center;
-					width: 100%;
+					/*width: 100%;*/
 				}
 
 					ul.actions:not(.fixed) li > * {
-						width: 100%;
+						/*width: 100%;*/
 					}
 
 					ul.actions:not(.fixed) li:first-child {
@@ -2637,7 +2637,7 @@
 					ul.actions:not(.fixed) li input[type="button"],
 					ul.actions:not(.fixed) li button,
 					ul.actions:not(.fixed) li .button {
-						width: 100%;
+						/*width: 100%;*/
 					}
 
 						ul.actions:not(.fixed) li input[type="submit"].icon:before,
@@ -3826,7 +3826,9 @@
 			header.major {
 				padding: 0;
 			}
-
+            #banner {
+                min-height: 280px;
+            }
 		/* List */
 
 			ul.actions {
@@ -3835,9 +3837,9 @@
 
 				ul.actions li {
 					display: block;
-					padding: 1em 0 0 0;
+					padding: 0 5px 0 0;
 					text-align: center;
-					width: 100%;
+					/*width: 100%;*/
 				}
 
 					ul.actions li:first-child {
@@ -3845,7 +3847,7 @@
 					}
 
 					ul.actions li > * {
-						width: 100%;
+						/*width: 100%;*/
 						margin: 0 !important;
 					}
 
@@ -3912,7 +3914,26 @@
 			#cta {
 				padding: 2.5em 1em 3em 1em;
 			}
+        ul.actions li {
+            font-size: 5px ;
+        }
+        div.to-animate {
+				margin-top: 10px;
+				top: 5px;
+				font-size: 6px;
 
+			}
+			div.currency {
+				padding: 4px 4px 4px 4px;
+                border: 1px solid #fff
+			}
+			span.country {
+				font-size: 5px;
+				padding: 2px 3px;
+				margin-left: 4px;
+				margin-top: -1px;
+				letter-spacing: 1px;
+			}
 	}
 
 canvas {
