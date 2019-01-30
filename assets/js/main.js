@@ -248,7 +248,7 @@ ticker = function(currencies) {
       {
         var sym = symbols[currency],
             price = currencyRates['market_data']['current_price'][currency];
-          console.log(currency, price);
+          //console.log(currency, price);
         if (sym === undefined) {
           sym = "";
         }

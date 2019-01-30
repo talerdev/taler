@@ -3407,7 +3407,9 @@
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
-
+			ul.icons li {
+				padding-top: 15px;
+			}
 	}
 
 /* Narrower */
@@ -3768,6 +3770,22 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
+			div.to-animate {
+				margin-top: 20px;
+				top: 5px;
+				font-size: 10px;
+
+			}
+			div.currency {
+				padding: 5px 10px 5px 5px;
+			}
+			span.country {
+				font-size: 5px;
+				padding: 2px 3px;
+				margin-left: 15px;
+				margin-top: 1px;
+				letter-spacing: 1px;
+			}
 
 	}
 
