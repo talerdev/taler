@@ -3975,9 +3975,13 @@ canvas {
     background-color: #e5e5e5;
 }
 ul.icons.big {
-    font-size: 2.1em;
+    font-size: 1.5em;
 }
-
+.icon-big {
+    font-size: 1.5em;
+    color: gray;
+    border-bottom: 0;
+}
 .iconn.major {
 			background: #666;
 			border-radius: 100%;

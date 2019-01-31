@@ -24,7 +24,7 @@ lang: ru
 								<a href="#" class="icon fa-angle-down">RU</a>
 								<ul>
 									{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-									{% for page in pages %}{% if page.lang != 'ru' %} <li><a href="http://tlrbtc.com/{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li>{% endif %} {% endfor %}
+									{% for page in pages %}{% if page.lang != 'ru' %} <li><a href="http://tlrbtc.com{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li>{% endif %} {% endfor %}
 								</ul>
 							</li>
 
@@ -189,8 +189,8 @@ lang: ru
                 <li><a href="https://www.instagram.com/talerofficial/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
                 <li><a href="https://t.me/TalerOfficial" class="icon fa-telegram"><span class="label"></span></a></li>
                 <li><a href="https://github.com/taler-project" class="icon fa-github"><span class="label">Github</span></a></li>
-                <li><a href="https://discordapp.com/invite/C5gTa98" class="fab fa-discord" style="color: gray; font-size: 60px; border-bottom: 0;"><span class="label"></span></a></li>
-                <li><a href="https://bitcointalk.org/index.php?topic=5103992" class="fab fa-bitcoin" style="color: gray; font-size: 60px; border-bottom: 0;"><span class="label"></span></a></li>
+                <li><a href="https://discordapp.com/invite/C5gTa98" class="fab fa-discord icon-big"><span class="label"></span></a></li>
+                <li><a href="https://bitcointalk.org/index.php?topic=5103992" class="fab fa-bitcoin icon-big"><span class="label"></span></a></li>
                 <li><a href="https://www.youtube.com/channel/UCJcLFsK07NovkxrUijht5uA" class="icon fa-youtube" ><span class="label">Youtube</span></a></li>
                 <li><a href="https://vk.com/taler_coin_official" class="icon fa-vk" ><span class="label">Vkontakte</span></a></li>
               </ul>
