@@ -7,6 +7,10 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif site.description[page.lang] %}{{ site.description[page.lang] }}{% else %}{{ site.description['ru'] }}{% endif %}">
   <meta name="keywords" content="Taler, BTC, Bitcoin, crypto, cryptocurrency, blockchain, криптовалюта, талер, биткоин, крипта, электронные деньги, биткоинт, блокчейн, биткоины, Беларусь, эфир, рубль, ethereum, eth, segwit, atomic swaps, Segregated Witness, Bech32, pos, pow, mining">
   <meta name="author" content="Taler community.">
+  <meta property="og:title" content="{{ site.title[page.lang] }}">
+  <meta property="og:description" content="{{ site.description[page.lang] }}">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="{{ site.production_url }}/index.htm">
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>

@@ -23,7 +23,7 @@ lang: en
 					<a href="#" class="icon fa-angle-down">EN</a>
 					<ul>
 						{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-						{% for page in pages %}{% if page.lang != 'en' %} <li><a href="http://tlrbtc.com{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li>{% endif %} {% endfor %}
+						{% for page in pages %}{% if page.lang != 'en' %} <li><a href="{{ site.production_url }}{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li>{% endif %} {% endfor %}
 					</ul>
 				</li>
 
