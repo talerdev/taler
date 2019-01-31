@@ -1969,6 +1969,8 @@
 		margin: 0 auto;
 		max-width: calc(100% - 5em);
 		width: 60em;
+        position: relative;
+        z-index: 100;
 	}
 
 		.container.xsmall {
@@ -3147,15 +3149,17 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
-		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/earth-11595_1920.jpg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+		/*background-attachment: scroll,							fixed;*/
+		/*!*background-color: #666;*!*/
+		/*!*background-image: url("images/overlay.png"), url("../../images/earth-11595_1920.jpg");*!*/
+		/*background-position: top left,						center center;*/
+		/*background-repeat: repeat,							no-repeat;*/
+		/*background-size: auto,							cover;*/
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
+        position: relative;
+        z-index: 100;
 	}
 
 		#banner :last-child {
@@ -3950,12 +3954,13 @@ canvas {
   padding-top: 100px;
   padding-left: 10%;
   padding-right: 10%;
-  /*background-color: #b61924;*/
-    /*background-image: url("images/overlay.png"), url("../../images/earth-11595_1920.jpg");*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-position: 50% 50%;*/
-    z-index: 100;
+  background-attachment: scroll,							fixed;
+/*background-color: #666;*/
+background-image: url("images/overlay.png"), url("../../images/earth-11595_1920.jpg");
+background-position: top left,						center center;
+background-repeat: repeat,							no-repeat;
+background-size: auto,							cover;
+    z-index: 1;
 }
 
 /* ---- stats.js ---- */
