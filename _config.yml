@@ -17,8 +17,8 @@ index:
   ru: index.html
   en: index_en.html
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tlrbtc.com/" # the base hostname & protocol for your site
-
+url: "https://tlrbtc.com" # the base hostname & protocol for your site
+production_url: "https://tlrbtc.com"
 
 # Build settings
 markdown: kramdown
