@@ -4010,6 +4010,7 @@ ul.icons.big {
 	font-weight: 400;
 	box-sizing: border-box;
 	line-height: 1.5;
+    z-index: 100;
 }
 .currency {
 	border: 2px solid #fff;
