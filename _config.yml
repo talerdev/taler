@@ -10,9 +10,9 @@ title:
   ru: Талер криптовалюта будущего
   en: Taler cryptocurrency of the future
 email: talerdev@protonmail.com
-description: Талер. Первая Белорусская криптовалюта создана для использования в бизнесе и обычными людьми. Телер это новый биткоин.
-#  ru: Талер. Первая Белорусская криптовалюта создана для использования в бизнесе и обычными людьми. Телер это новый биткоин.
-#  en: Taler. First Belarus cryptocurrency. Taler already used by businesses in Belarus and local peopple.
+description:
+  ru: Анонимная криптовалюта с открытым кодом, стабильность на рынке, многофункциональность и бизнес-партнеры среди ведущих белорусских компаний. Частные расчеты, накопительная функция и реальное применение - это Талер. Ваша валюта будущего.
+  en: Anonymous cryptocurrency with open code, market stability, multifunctionality and business partners amongst leading Belarusian companies. Private payments, accumulating function and real-life adoption. This is Taler. Your future currency.
 index:
   ru: index.html
   en: index_en.html

@@ -4048,3 +4048,6 @@ margin-left: 25px;
 .table th {
 	padding-top: 2em;
 }
+.tooltip {
+    padding-left: 5px;
+}
